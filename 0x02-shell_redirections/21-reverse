@@ -1,4 +1,2 @@
 #!/bin/bash
-input=$(cat)
-reversed_input=$(echo "$input" | rev)
-echo "$reversed_input"
+read -r input && echo "$input" | rev
