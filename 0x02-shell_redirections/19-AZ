@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Enter a string: " && read input_string && echo "Modified string: $(echo "$input_string" | tr 'Ac' 'Ze')"
+read -p "Enter a string: " input_string; printf "Modified string: %s\n" $(echo "$input_string" | tr 'Ac' 'Ze')	
